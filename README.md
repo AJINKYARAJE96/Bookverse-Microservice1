@@ -3,13 +3,13 @@ Here's a complete README.md content you can use for your Flask-based microservic
 markdown
 Copy
 Edit
-# 📚 BookVerse - Flask Microservices on AWS
+# BookVerse - Flask Microservices on AWS
 
 **BookVerse** is an online bookstore application built using Python Flask microservices architecture. Each microservice handles a specific business function and communicates over HTTP. The services are containerized using Docker and deployed using Docker Compose (locally) or ECS (AWS).
 
 ---
 
-## 🧩 Microservices Overview
+##  Microservices Overview
 
 | Microservice   | Description                        | Port  |
 |----------------|------------------------------------|-------|
@@ -21,7 +21,7 @@ Edit
 
 ---
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 - **Backend:** Python (Flask)
 - **Databases:** (In-memory for demo, replace with PostgreSQL/MongoDB for prod)
@@ -34,29 +34,29 @@ Edit
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
-### 📦 Prerequisites
+###  Prerequisites
 
 - Docker & Docker Compose installed
 - Python 3.8+ (for development)
 - AWS CLI configured (for deployment)
 
-### 🔧 Running Locally
+###  Running Locally
 
 ```bash
-# Clone the project
+ Clone the project
 git clone https://github.com/yourusername/bookverse.git
 cd bookverse
 
 # Build and run all services
 docker-compose up --build
-🔍 Access Services
+ Access Services
 API Gateway: http://localhost:5000
 
 Example request: POST http://localhost:5000/gateway/user/register
 
-🧪 Sample API Usage
+ Sample API Usage
 Register a User
 http
 Copy
@@ -101,7 +101,7 @@ Content-Type: application/json
   "order_id": "<uuid>",
   "amount": 250
 }
-☁️ Deploying on AWS
+☁ Deploying on AWS
 Option 1: EC2 (Simple)
 Launch an EC2 instance (Amazon Linux 2 or Ubuntu).
 
@@ -133,7 +133,7 @@ Use ALB (Application Load Balancer) to route traffic.
 
 Add security groups, IAM roles, and configure environment variables.
 
-📁 Project Structure
+ Project Structure
 Copy
 Edit
 bookverse/
@@ -150,7 +150,7 @@ app.py: Flask application
 
 Dockerfile: To build service container
 
-🔒 Security Suggestions
+ Security Suggestions
 Use hashed passwords (bcrypt) instead of plain text
 
 Add JWT token-based authentication
@@ -159,7 +159,7 @@ Use HTTPS via NGINX or ALB
 
 Use production-grade databases (PostgreSQL, MongoDB)
 
-📢 Future Enhancements
+ Future Enhancements
 Add JWT-based auth middleware
 
 Replace in-memory dicts with persistent DBs
@@ -170,12 +170,12 @@ Add message queue (e.g., RabbitMQ, Kafka) for async orders
 
 Monitoring with Prometheus & Grafana
 
-👨‍💻 Author
-Your Name
-📧 your.email@example.com
-🔗 LinkedIn | GitHub
+ Author
+Your Name : AJINKYA GADE 
+ your.email@example.com
+ LinkedIn | GitHub
 
-📝 License
+License
 MIT License – feel free to use and modify.
 
 yaml
